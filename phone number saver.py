@@ -9,8 +9,7 @@ try:
         if save == 'y':
             with open("text.txt" , "a") as file:
                 file.write (user_input_name + ":" + user_input + "\n")
-
-
+            
                 print(f"SAVED  {user_input_name} has {user_input} number ")
                 contact_search = input("do you want to search any number in your contacts?? (y/n): ").lower()
                 if contact_search == 'y':
@@ -23,3 +22,4 @@ try:
     main()
 except ValueError:
     print("INVALID!!")
+
